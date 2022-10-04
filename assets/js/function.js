@@ -51,7 +51,7 @@ const areaCal = (data, val1, val2 = null) => {
     }else if (data == 'Triangle') {
         result = 1.5 * ( val1 * val2 );
     }else if (data == 'Circle') {
-        result = 3.141 * ( val1 * val1 );
+        result = 3.1416 * ( val1 * val1 );
     }
 
     return `The area of ${data} is = ${result}`;
