@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area Calculator</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    
+
+
+    <div class="container">
+        <div class="row py-5">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div class="card shadow">
+                    <div class="card-header">
+                        <center><h4>Area Calculator</h4></center>
+                    </div>
+                    <div class="card-body">
+                        <div class="msg"></div>
+                        <form action="" id="areaCalForm">
+
+                            <div class="form-group py-2">
+                                <label for="">Select Type</label>
+                                <select name="selectAreaType" id="selectAreaType" class="form-select mt-1">
+                                    <option value="">---Select---</option>
+                                    <option value="Rectangle">Area of Rectangle</option>
+                                    <option value="Square">Area of Square</option>
+                                    <option value="Triangle">Area of Triangle</option>
+                                    <option value="Circle">Area of Circle</option>
+                                </select>
+                            </div>
+                            <div class="form-group py-2" id="rectangle">
+                                <div class="rc1 py-2">
+                                    <label for="">Length</label>
+                                    <input type="text" name="Length" class="form-control mt-1">
+                                </div>
+                                <div class="rc2 py-2">
+                                    <label for="">Width</label>
+                                <input type="text" name="Width" class="form-control mt-1">
+                                </div>    
+                            </div>
+                            <div class="form-group py-2" id="square">
+                                <div class="sc1 py-2">
+                                    <label for="">Length / Width</label>
+                                    <input type="text" name="scLength" class="form-control mt-1">
+                                </div>    
+                            </div>
+                            <div class="form-group py-2" id="triangle">
+                                <div class="ta1 py-2">
+                                    <label for="">Height</label>
+                                    <input type="text" name="Height" class="form-control mt-1">
+                                </div>    
+                                <div class="ta2 py-2">
+                                    <label for="">Base</label>
+                                    <input type="text" name="Base" class="form-control mt-1">
+                                </div>    
+                            </div>
+                            <div class="form-group py-2" id="circle">
+                                <div class="cr1 py-2">
+                                    <label for="">Radious</label>
+                                    <input type="text" name="Radious" class="form-control mt-1">
+                                </div>    
+                            </div>
+                            <div class="form-group py-2" >
+                                <button type="submit" class="btn btn-primary">Submit</button>   
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="card-footer" style="display: none;" id="ft">
+                        <div class="msgL"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+    <script src="./assets/js/function.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
